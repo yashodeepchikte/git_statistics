@@ -1,0 +1,18 @@
+
+/* 
+primary color :  #e0e0e0
+secondaary color: #24292e
+background : #1a1a1b
+*/
+
+body{
+  color:#e0e0e0;
+  background-color: #1a1a1b;
+  font-family: "Montserrat",sans-serif;
+  background-image: url("https://desktop.github.com/images/star-bg.svg");
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color:  #e0e0e0;
+}

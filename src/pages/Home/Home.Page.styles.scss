@@ -1,0 +1,17 @@
+.HomePage{
+    position: relative;
+    height:85vh;
+    // border:1px solid white;
+    display: flex;
+    .content-box{
+        width:70%;
+        // border:1px solid red;
+        text-align: center;
+        margin-top: auto;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

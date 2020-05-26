@@ -1,0 +1,9 @@
+.app{
+    height:95vh;
+}
+.container{
+    
+    /* border: 1px solid yellow;; */
+    max-width: 1000px;
+    margin: 0px auto;    
+}

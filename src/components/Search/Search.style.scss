@@ -1,0 +1,31 @@
+.search{
+    // border:1px solid blue;
+    height:12vh;
+    form{
+        height:10vh;
+        // border:1px solid orange;
+        justify-content: center;
+        display: flex;
+       
+        input{
+            outline: none;
+            transition-duration: 0.5s ;
+            transition-timing-function: ease-in-out;
+            height:70%;
+            width:60%;
+            border-radius: 4vh ;
+            border:none;
+            text-align: center;
+            font-size: 100%;
+            font-weight: lighter;
+        }
+        input:focus{
+            transition-duration: 0.5s ;
+            transition-timing-function: ease-in-out;
+            border-radius: 5vh ;
+            width:65%;
+            font-size: 100%;
+            font-weight: lighter;
+        }
+    }
+}
