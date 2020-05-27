@@ -1,6 +1,3 @@
-import { findUsers } from "./searching.utils"
-import axios from "axios"
-
 const INITIAL_STATE = {
     searchHandel: "",
     foundUsers: []

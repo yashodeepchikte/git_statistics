@@ -1,4 +1,3 @@
-
 /* 
 primary color :  #e0e0e0
 secondaary color: #24292e
@@ -6,9 +5,10 @@ background : #1a1a1b
 */
 
 body{
+  overflow: hidden;
   color:#e0e0e0;
   background-color: #1a1a1b;
-  font-family: "Montserrat",sans-serif;
+  font-family: sans-serif;
   background-image: url("https://desktop.github.com/images/star-bg.svg");
   background-size: cover;
   box-sizing: border-box;
@@ -20,19 +20,20 @@ a{
 
 /* width */
 ::-webkit-scrollbar {
+  
   width: 8px;
+  height: 100px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px black; 
+  box-shadow: inset 0 0 5px #1a1a1b; 
   border-radius: 10px;
 }
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: greenyellow; 
-  border-radius: 10px;
+  border-radius: 100px;
+  height:80px;
 }
 
 /* Handle on hover */

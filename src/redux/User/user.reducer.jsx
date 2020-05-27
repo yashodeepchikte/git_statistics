@@ -1,14 +1,13 @@
 const INITIAL_STATE = {
-    userHandel: "",
-    user: {}
+    currentUser: {}
 }
 
-const UserReducer = (state = INITIAL_STATE, type) => {
-    switch (type.action) {
-        case ("search"):
+const UserReducer = (state = INITIAL_STATE, action) => {
+    switch (action.type) {
+        case ("SET_USER"):
             return {
                 ...state,
-                users: type.payload,
+                currentUser: action.payload
             }
         default:
             return state

@@ -15,7 +15,7 @@ const Dropdown = (props) => {
     const { foundUsers } = props
 
     if (foundUsers !== []) {
-        console.log("inside dropdown found=", foundUsers)
+        // console.log("inside dropdown found=", foundUsers)
         return (
             <div className={`dropdown ${foundUsers === [] ? "hidden" : ""}`} >
                 {foundUsers.map(user => <DropdownItem user={user} key={user.id} />)}

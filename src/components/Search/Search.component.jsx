@@ -7,27 +7,24 @@ import Dropdown from "../DropdownList/Dropdown.component"
 import { connect } from "react-redux"
 
 // importing actions for redux
-import { changeSearchHandel } from "../../redux/Searching/Searching.actions"
-// import { searchUsers } from "../../redux/Searching/Searching.actions"
-import { setSearchUsers } from "../../redux/Searching/Searching.actions"
-
+import { setSearchHandel, setFoundUsers } from "../../redux/Searching/Searching.actions"
 
 // importing stylesheet
 import "./Search.style.scss"
 
 const Search = (props) => {
 
-    const { setSearchHandel, searchHandel, setSearchUsers, foundUsers } = props
+    const { searchHandel, foundUsers, setSearchHandel, setFoundUsers } = props
     const handelChange = (event) => {
         setSearchHandel(event.target.value)
     }
     const handelSubmit = (event) => {
         event.preventDefault();
-        console.log("before search = ", searchHandel)
         try {
             axios.get(`https://api.github.com/search/users?q=${searchHandel}&
-        client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&
-        client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`).then(res => { console.log("res.data.items= ", res.data.items); setSearchUsers(res.data.items) })
+                            client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&
+                            client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`)
+                .then(res => { setFoundUsers(res.data.items) })
                 .catch(err => alert(err.message));
         } catch (err) {
             alert(err.message)
@@ -37,28 +34,24 @@ const Search = (props) => {
     return (
         <div className="search">
             <form onSubmit={handelSubmit}>
-                <input type="text" placeholder="search GitHub user" value={searchHandel} onChange={handelChange} name="searchHandel" />
+                <input type="text" placeholder="search GitHub user" value={searchHandel} onChange={handelChange} name="searchHandel" autoComplete="off" />
             </form>
             <Dropdown foundUsers={foundUsers} />
-
         </div>
     )
 }
 
 const mapStateToProps = (state) => {
     return {
-        userHandel: state.user.userHandel,
         searchHandel: state.searching.searchHandel,
         foundUsers: state.searching.foundUsers
-        // foundUsers: state.srarch.foundUsers
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        setSearchHandel: searchHandel => dispatch(changeSearchHandel(searchHandel)),
-        // searchUsers: searchHandel => dispatch(searchUsers(searchHandel)),
-        setSearchUsers: users => dispatch(setSearchUsers(users))
+        setSearchHandel: searchHandel => dispatch(setSearchHandel(searchHandel)),
+        setFoundUsers: users => dispatch(setFoundUsers(users))
     }
 }
 

@@ -3,7 +3,7 @@
     height:12vh;
     k,
     form{
-        height:8vh;
+        height:5vh;
         // border:1px solid orange;
         justify-content: center;
         display: flex;
@@ -18,7 +18,7 @@
             border-radius: 4vh ;
             border:none;
             text-align: center;
-            font-size: 250%;
+            font-size: 150%;
             font-weight: lighter;
         }
         input:focus{
@@ -26,7 +26,7 @@
             transition-timing-function: ease-in-out;
             border-radius: 5vh ;
             width:90%;
-            font-size: 250%;
+            font-size: 150%;
             font-weight: lighter;
         }
     }

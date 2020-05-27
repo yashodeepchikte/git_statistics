@@ -1,8 +1,13 @@
 .HomePage{
+
+    
+
     position: relative;
-    height:85vh;
+    height:100vh;
+    overflow: hidden;
     // border:1px solid white;
     display: flex;
+    color:white;
     .content-box{
         width:70%;
         // border:1px solid red;
@@ -13,11 +18,13 @@
         left:50%;
         transform: translate(-50%, -50%);
         h1{
-            font-size: 400%;
+            font-size: 250%;
+            color: white;
+            font-weight: 500;
             
         }
         h4{
-            font-size: 200%;
+            font-size: 100%;
             
         }
     }
