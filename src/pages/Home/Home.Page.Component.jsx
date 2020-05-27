@@ -12,7 +12,7 @@ const HomePage = (props) => {
     return (
         <div className="HomePage">
             <div className="content-box">
-                <h1><i class="fab fa-github fa-1x"></i> GitHub-Statistics</h1>
+                <h1><i className="fab fa-github fa-1x"></i> GitHub-Statistics</h1>
                 <h4>An open-source GitHub contribution analyzer</h4>
                 <Search />
             </div>

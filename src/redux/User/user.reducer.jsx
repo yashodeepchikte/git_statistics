@@ -1,7 +1,6 @@
 const INITIAL_STATE = {
     userHandel: "",
-    user: {},
-    users: [],
+    user: {}
 }
 
 const UserReducer = (state = INITIAL_STATE, type) => {

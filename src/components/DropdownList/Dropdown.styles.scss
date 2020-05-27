@@ -1,0 +1,11 @@
+.dropdown{
+    &.hidden{
+        visibility: hidden;
+    }
+    margin:auto;
+    width:80%;
+    height:25vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // border:1px solid white;
+}

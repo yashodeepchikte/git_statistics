@@ -1,30 +1,32 @@
 .search{
     // border:1px solid blue;
     height:12vh;
+    k,
     form{
-        height:10vh;
+        height:8vh;
         // border:1px solid orange;
         justify-content: center;
         display: flex;
+        margin-bottom: 15px;
        
         input{
             outline: none;
             transition-duration: 0.5s ;
             transition-timing-function: ease-in-out;
-            height:70%;
-            width:60%;
+            height:100%;
+            width:90%;
             border-radius: 4vh ;
             border:none;
             text-align: center;
-            font-size: 100%;
+            font-size: 250%;
             font-weight: lighter;
         }
         input:focus{
             transition-duration: 0.5s ;
             transition-timing-function: ease-in-out;
             border-radius: 5vh ;
-            width:65%;
-            font-size: 100%;
+            width:90%;
+            font-size: 250%;
             font-weight: lighter;
         }
     }

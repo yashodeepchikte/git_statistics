@@ -1,5 +1,10 @@
 // importing React modules
-import React from 'react';
+// import React from 'react';
+import React from "react"
+// @ts-ignore
+import axios from "axios"
+// tslint:disable-next-line:no-unused-variable
+import { thistype } from "./Header.component"
 
 // importing components
 import { ReactComponent as Logo } from "./logo.svg"
@@ -18,7 +23,7 @@ const Header = (props) => {
             <nav>
                 <a href="/" > <Logo style={{ backgroundColor: "white", height: "50px", width: "50px" }} /></a>
                 <a href="/">GitHub-Statistics</a>
-                <Search />
+
             </nav>
 
         </div>
