@@ -2,6 +2,9 @@
 import React from 'react';
 
 // importing components
+import Card from "../../components/Card/Card.component"
+
+
 
 //  imports related to redux
 import { connect } from "react-redux"
@@ -19,11 +22,7 @@ const UserPage = ({ match, foundUsers, setUserHandel, setCurrentUser, currentUse
     console.log("current user = ", currentUser)
     return (
         <div className="UserPage">
-            <div className="container">
-                <h1>Userpage</h1>
-                <h1>{currentUser.login} = Currentuser</h1>
-                <p>Search components</p>
-            </div>
+            <Card currentUser={currentUser} abc="abc" />
         </div>
     )
 }
