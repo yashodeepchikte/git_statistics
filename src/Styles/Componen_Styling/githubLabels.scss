@@ -1,0 +1,12 @@
+.git-wrapper{
+	text-align: center;
+	padding: 1rem;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	top: 10px;
+    span {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+}

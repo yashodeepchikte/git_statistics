@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:400,500|Sen&display=swap");
+
+body {
+	font-family: "Sen", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Global color decleartion */
+$blueheader: #24292e;
+$buttonPrimary: #54a3ff;
+$dark_bg: #1a1a1b;
+$white: #fff;
+$black: #000;
+$space_bg: url(https://desktop.github.com/images/star-bg.svg) no-repeat;
+
+
+
+
+
+.d-flex{
+    display: flex !important;
+}
+
+.justify-content-center{
+    justify-content: center !important;
+}
+
+
+.content-area{
+	text-align: center;
+	// border: 1px solid red;
+	min-width: 500px;
+	max-width: 600px;
+	width:70%;
+	box-sizing: border-box;
+	
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+}
+
+
+.app{
+	position: relative;
+	height:100vh;
+	width: 100vw
+	
+	
+}
+.container{    /* border: 1px solid yellow;; */
+    max-width: 1000px;
+    width:70%;
+    margin: 0px auto;    
+}
+
+
+
+@media (max-width: 520px){
+	.content-area{
+		// border: 1px solid purple;
+		min-width: 300px;
+		max-width: 500px;
+		width:70%;
+		box-sizing: border-box;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "/Componen_Styling/stats";
+@import "/Componen_Styling/footer";
+
+@import "/Componen_Styling/githubLabels";
+@import "/Componen_Styling/landing";
+@import "/Componen_Styling/search";
+@import "/Componen_Styling/share";
+@import "/Componen_Styling/DropdownItem.scss"

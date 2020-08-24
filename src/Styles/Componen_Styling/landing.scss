@@ -1,0 +1,13 @@
+
+.landing-page {
+	min-height: 100vh;
+	min-width: 100vw;
+	position: relative;
+	background: $space_bg;
+	background-size: cover;
+
+	footer {
+		bottom: 15px;
+	}
+}
+
