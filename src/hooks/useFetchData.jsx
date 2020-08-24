@@ -6,7 +6,7 @@ const useFetchData = (endpoint) => {
     const [state, setState] = useState({})
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false) 
-    console.log("Endpoint send to sue data fetch = ", endpoint)
+    // console.log("Endpoint send to sue data fetch = ", endpoint)
     const fetchData = useCallback(async () => {
         setError(false)
         setLoading(true)

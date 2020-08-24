@@ -1,6 +1,6 @@
 
 .app-container{
-    // border: 1px solid greenyellow;
+    border: 1px solid greenyellow;
     box-sizing: border-box;
     width: 100%;
     background-color: #1a1a1b;
@@ -46,4 +46,57 @@
     margin: auto;
     max-width: 1140px;
     max-height: 200px;
+}
+
+
+.activity{
+    margin:auto;
+    margin-top: 20px;
+    background-color: #24292e;
+    border-color: #171a1d;
+    width: 40%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+    font-size: 12px;
+    padding: 10px;
+    .activityItem{
+        // border: 1px solid green;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        background-color: #24292e;
+        border-color: #171a1d;
+        .activity-avatar{
+            min-height: 35px;
+            max-height: 75px;
+            min-width: 35px;
+            max-width: 75px;
+            margin-right: 15px;
+            img{
+                height: 35px;
+                width: 35px;
+                border-radius: 5px;;
+            }
+        }
+        .text{
+            font-size: 11px;
+            // border: 1px solid orange;
+            p{
+                margin: 0;
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 520px){
+	.activity{
+
+		border: 1px solid purple;
+		min-width: 300px;
+		max-width: 500px;
+		box-sizing: border-box;
+		width:70%;
+	}
 }

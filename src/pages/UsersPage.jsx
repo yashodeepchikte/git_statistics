@@ -21,6 +21,8 @@ export default (props) => {
 
             <div className="info-section">
                 <BasicInformation userName={userName}/>
+            </div>
+            <div className="activity">
                 <UserActivity userName={userName} />
             </div>
 
