@@ -1,0 +1,49 @@
+
+.app-container{
+    // border: 1px solid greenyellow;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #1a1a1b;
+    min-height: 100vh;
+}
+
+.info-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    background-color: #24292e;
+    border-color: #171a1d;
+    border-radius: .25rem;
+}
+.profile-pic{
+    width: 120px;
+    // border: 1px solid green;
+    img{
+        min-width: 100px;
+        max-width: 120px;
+        min-height: 100px;
+        max-height: 120px;
+        // border: 2px solid orange;
+    }
+}
+.info{
+    width: 40%;
+    text-align: center;
+    // border:1px solid red;
+
+}
+.info-stats{
+    width: 40%;
+    text-align: center;
+//     border: 1px solid orange;
+}
+.BasicInfo{
+    // border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    max-width: 1140px;
+    max-height: 200px;
+}

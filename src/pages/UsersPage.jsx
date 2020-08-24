@@ -1,8 +1,10 @@
 import React, {useState, useEffect}  from "react"
 import {  useParams} from "react-router-dom"
-import useFetchUser from "../hooks/useFetchUSer"
 
 // import Spinner from "../components/Spinner/Spinner"
+import BasicInformation from "../components/UserInformation"
+import UserActivity from "../components/UserActivity"
+import UserRepositories from "../components/UserRepositires"
 
 export default (props) => {
 
@@ -10,24 +12,17 @@ export default (props) => {
 
     const  userName = paramaters.userHandel
 
-    const [data, loading, error] = useFetchUser(userName)
-    if(loading){
-        return "LOADING"
-    }
-    if(error){
-        return <h1> ther is some error</h1>
-    }
-    let user = data.data.items.filter(user => user.login == userName)
-    console.log("User ----------------------> ", user)
+
     return(
-        <div className="container">
+        <div className="app-container">
             <h1>
                 Header
             </h1>
 
-            <h1>
-                INFORMATION
-            </h1>
+            <div className="info-section">
+                <BasicInformation userName={userName}/>
+                <UserActivity userName={userName} />
+            </div>
 
         </div>
     )
