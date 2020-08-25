@@ -1,6 +1,6 @@
 
 .app-container{
-    border: 1px solid greenyellow;
+    // border: 1px solid greenyellow;
     box-sizing: border-box;
     width: 100%;
     background-color: #1a1a1b;
@@ -32,12 +32,14 @@
 .info{
     width: 40%;
     text-align: center;
+    font-size: 12px;
     // border:1px solid red;
 
 }
 .info-stats{
     width: 40%;
     text-align: center;
+    font-size: 12px;
 //     border: 1px solid orange;
 }
 .BasicInfo{
@@ -58,15 +60,20 @@
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 300px;
-    font-size: 12px;
-    padding: 10px;
+    font-size: 10px;
+    padding: 5px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
     .activityItem{
         // border: 1px solid green;
         display: flex;
         align-items: center;
-        padding: 2px;
+        padding-bottom: 5px;
         background-color: #24292e;
         border-color: #171a1d;
+
         .activity-avatar{
             min-height: 35px;
             max-height: 75px;
@@ -80,9 +87,9 @@
             }
         }
         .text{
-            font-size: 11px;
             // border: 1px solid orange;
             p{
+                font-size: 10px;
                 margin: 0;
             }
         }

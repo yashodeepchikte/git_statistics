@@ -27,6 +27,8 @@
     // justify-content: left;
     overflow-y: hidden;
     font-size: 50px;
+    color: white;
+    text-decoration:none;
     &:hover{
         background-color: #24292e;
         cursor: pointer;
@@ -36,19 +38,21 @@
         width:84%;
         // border:1px solid green;
         text-align: left;
-        font-size: 12px;
+        font-size: 10px;
     }
     .avatar{
         max-width:15%;
         // border:1px solid blue;
-        margin-right: 1%;
+        margin: 1%;
+        margin-right: 2%;
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
     img{
-        height:45px;
-        width:45px;
+        height:30px;
+        width:30px;
         margin:auto;
         border-radius: 10%;
         // border:1px solid white;

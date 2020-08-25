@@ -21,8 +21,8 @@ a{
 /* width */
 ::-webkit-scrollbar {
   
-  width: 8px;
-  height: 100px;
+  width: 5px;
+  height: 40px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -32,8 +32,8 @@ a{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: greenyellow; 
-  border-radius: 100px;
-  height:80px;
+  border-radius:4px;
+  height: 5px;
 }
 
 /* Handle on hover */

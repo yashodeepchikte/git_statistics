@@ -6,6 +6,7 @@ import BasicInformation from "../components/UserInformation"
 import UserActivity from "../components/UserActivity"
 import UserRepositories from "../components/UserRepositires"
 
+
 export default (props) => {
 
     const paramaters = useParams()
@@ -23,6 +24,9 @@ export default (props) => {
                 <BasicInformation userName={userName}/>
             </div>
             <div className="activity">
+                <h6>
+                    My Recent activities
+                </h6>
                 <UserActivity userName={userName} />
             </div>
 
